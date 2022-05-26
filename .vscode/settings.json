@@ -1,0 +1,16 @@
+{
+    "editor.codeActionsOnSave": {
+    
+    },
+    "css.customData": [".vscode/css_custom_data.json"],
+    // other settings
+    "tailwindCSS.includeLanguages": {
+        "javascript": "javascript",
+        "html": "HTML"
+    },
+    "editor.quickSuggestions": {
+        "strings": true
+    }
+
+    
+}
