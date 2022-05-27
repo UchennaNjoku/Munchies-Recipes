@@ -12,6 +12,9 @@ function Pages() {
         <Route path='/' element={<Home />} />
         <Route path='/recipe/:name' element={<Recipe />}/>
         <Route path='/searched/:search' element={<Searched />} />
+        <Route path="*">
+          <Redirect to="/" />
+        </Route>
     </Routes>
   )
 }
