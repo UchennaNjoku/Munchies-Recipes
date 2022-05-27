@@ -14,23 +14,16 @@ function Vegetarian() {
 
     const getVegetarian = async () => {
 
-      const check = localStorage.getItem('vegetarian');
-
-      if(check){
-        setVegetarian(JSON.parse(check));
-      }
-      else{
         const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9&tags=vegetarian`);
         const data = await api.json();
 
-        localStorage.setItem('vegetarian', JSON.stringify(data.recipes));
         setVegetarian(data.recipes);
         console.log(data.recipes);
       };
 
      
       
-    }
+  
              
   return (
 
