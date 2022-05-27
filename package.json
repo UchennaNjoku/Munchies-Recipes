@@ -1,8 +1,7 @@
 {
-  "name": "munchies-recipes-v2",
+  "name": "munchies-recipes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://UchennaNjoku.github.io/MunchiesRecipes",
   "dependencies": {
     "@splidejs/react-splide": "^0.7.5",
     "@testing-library/jest-dom": "^5.16.4",
@@ -25,9 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build"
+    "eject": "react-scripts eject"
   },
+
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -48,7 +47,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
-    "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.0.24"
   }
