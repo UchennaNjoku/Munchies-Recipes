@@ -10,7 +10,6 @@ function Pages() {
   return (
     <Routes Location={location} key={location.pathname}>
         <Route exact path='/' element={<Home />} />
-        <Route exact path='/MunchiesRecipes' element={<Home />} />
         <Route exact path='/recipe/:name' element={<Recipe />}/>
         <Route exact path='/searched/:search' element={<Searched />} />
         <Route exact path="*">
