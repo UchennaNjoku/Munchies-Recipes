@@ -1,5 +1,5 @@
 import React from 'react';
-import  { Route, Routes, useLocation, Redirect } from 'react-router-dom'
+import  { Route, Routes, useLocation, Navigate } from 'react-router-dom'
 import Home from './Home';
 import Recipe from './Recipe';
 import Searched from './Searched';
@@ -14,7 +14,7 @@ function Pages() {
         <Route exact path='/recipe/:name' element={<Recipe />}/>
         <Route exact path='/searched/:search' element={<Searched />} />
         <Route exact path="*">
-          <Redirect to="/" />
+        <Navigate to="/" replace={true} />
         </Route>
     </Routes>
   )
