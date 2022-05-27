@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { Link } from "react-router-dom";
+import {FaLongArrowAltLeft, FaLongArrowAltRight} from "react-icons/fa"
 
 
 function Popular() {
@@ -24,7 +25,7 @@ function Popular() {
   return (
 
     <div className="font-josefin p-6 mx-6 md:mx-14 mt-10 weird2:mt-24 weird3:mt-32 md:mt-36 weird4:mt-38 weird5:mt-44 lg:mt-28 lg:px-20">
-        <div className="flex flex-col  ">
+        <div className="flex flex-col relative">
           <h3 className="self-center font-bold text-2xl md:text-3xl lg:text-4xl mb-2">Our Picks</h3>
 
           <Splide options={{
@@ -44,11 +45,16 @@ function Popular() {
                         </div>
                     </div>
                 </Link>
-                <center className="text-xs md:text-sm lg:text-base w-full font-semibold self-center justify-center items-center top-24 text-black">{recipe.title}</center>
+                <center className=" mb-9 text-xs md:text-sm lg:text-base w-full font-semibold self-center justify-center items-center top-24 text-black">{recipe.title}</center>
               </SplideSlide>
             );
           })}
           </Splide>
+          <div className="inline absolute right-0 bottom-0"> 
+            <FaLongArrowAltLeft className="inline"/>
+            <p className="inline">drag for more</p>
+            <FaLongArrowAltRight className="inline" />
+           </div>
         </div>
     </div>
   )

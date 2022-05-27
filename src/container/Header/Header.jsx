@@ -10,9 +10,9 @@ function Header() {
         <div className=" tracking-tight mt-32 md:mt-40 lg:mt-44 text-white text-special  md:text-special3 lg:text-special4 font-bold uppercase ml-8 md:ml-10">
           Food at <br className='md:hidden'/> your <br/><span className='text-orangelanding'>fingertips</span>
         </div>
-        <div className=" mt-10 md:mt-20 lg:mt-32 mb-5 text-special2 italic flex flex-col self-start items-center ml-8 md:ml-10">
-           <p>need a recipe?<br/>look no further. </p>
-          <div className="">
+        <div className=" mt-10 md:mt-20 lg:mt-32 mb-5 text-special2 italic flex flex-col self-start items-start ml-8 md:ml-10">
+           <p>need a random recipe?<br/>look no further. </p>
+          <div className=" ml-10">
             <FaChevronDown className=''/>
           </div>
         </div>
