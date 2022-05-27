@@ -12,9 +12,6 @@ function Pages() {
         <Route exact path='/' element={<Home />} />
         <Route exact path='/recipe/:name' element={<Recipe />}/>
         <Route exact path='/searched/:search' element={<Searched />} />
-        <Route exact path="*">
-        <Navigate to="/" replace={true} />
-        </Route>
     </Routes>
   )
 }
