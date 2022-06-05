@@ -1,7 +1,7 @@
 import React from 'react';
 import { GiKnifeFork } from 'react-icons/gi';
 import { CgMenuRight } from "react-icons/cg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useState } from "react";
 
 function Navbar() {
@@ -37,8 +37,8 @@ function Navbar() {
           
     
             <ul tabindex="0" class="dropdown-content top-10 absolute menu p-2 shadow bg-base-100 rounded-box w-40 font-medium font-josefin">
-              <li><a href="/">about</a></li>
-              <li><a href="/">contact</a></li>
+              <li><Link to={'/about/'}>about</Link></li>
+              <li><Link to={'/contact/'}>contact</Link></li>
             </ul>
           </div>
         </div>
@@ -55,8 +55,8 @@ function Menu() {
     <div>
       <div className="md-flex">
           <ul className='flex font-medium font-josefin justify-center items-center '>
-            <li className='mx-5'><a href="/">about</a></li>
-            <li className='mx-5'><a href="/">contact</a></li>
+            <li className='mx-5'><Link to={'/about/'}>about</Link></li>
+            <li className='mx-5'><Link to={'/contact/'}>contact</Link></li>
           </ul>
       </div>
     </div>
